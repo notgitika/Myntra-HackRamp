@@ -23,10 +23,11 @@
     {% else %}
         <title>Myntra</title>
     {% endif %}
-    <!-- chatbot
+    <!-- chatbot --> 
     {% if user.is_authenticated %}
     <style>
       .rw-conversation-container .rw-header{background-color: #fa7070;}
+      .rw-title{color: #fff;}
     </style>
     <script>!(function () {
       let e = document.createElement("script"),
@@ -49,7 +50,7 @@
         t.insertBefore(e, t.firstChild);
     })();
     </script>
-  {% endif %}  --> 
+  {% endif %}  
 </head>
 <body>
     <header class="site-header">
@@ -62,7 +63,11 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
-                <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+                <a class="nav-item nav-link" href="{% url 'blog-about' %}">Trending</a>
+                <a class="nav-item nav-link" href="#">Offers</a>
+                <a class="nav-item nav-link" href="#">Men</a>
+                <a class="nav-item nav-link" href="#">Women</a>
+                <a class="nav-item nav-link" href="#">Kids</a>
               </div>
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
@@ -93,13 +98,13 @@
           </div>
           <div class="col-md-4">
             <div class="content-section">
-              <h3>Our Sidebar</h3>
-              <p class='text-muted'>You can put any information here you'd like.
+              <h3>Catalog</h3>
+              <p class='text-muted'>More items you might like.
                 <ul class="list-group">
-                  <li class="list-group-item list-group-item-light">Latest Posts</li>
-                  <li class="list-group-item list-group-item-light">Announcements</li>
-                  <li class="list-group-item list-group-item-light">Calendars</li>
-                  <li class="list-group-item list-group-item-light">etc</li>
+                  <li class="list-group-item list-group-item-light">Tops</li>
+                  <li class="list-group-item list-group-item-light">Jeans</li>
+                  <li class="list-group-item list-group-item-light">Shoes</li>
+                  <li class="list-group-item list-group-item-light">Jewellery</li>
                 </ul>
               </p>
             </div>
